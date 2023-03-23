@@ -1,3 +1,7 @@
+# Navigating the Unknown
+Your advanced sensory systems make it easy for you to navigate familiar environments, but you must rely on intuition to navigate in unknown territories. Through practice and training, you must learn to read subtle cues and become comfortable in unpredictable situations. Can you use your software to find your way through the blocks?
+
+
 ## Guidelines
 
 The point of this README is to provide some guidance for people who attempt solving a blockchain challenge for the first time.
