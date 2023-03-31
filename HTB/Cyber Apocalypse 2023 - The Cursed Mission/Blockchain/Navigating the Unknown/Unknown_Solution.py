@@ -15,6 +15,7 @@ from web3 import Web3, AsyncWeb3
 #Blocks on Etherium based block chains have a concept of Smart Contracts.  Smart Contract blocks contain compiled code, written in a language such as Solidity.
 
 # └─$ cat README.md
+
 #We connect to the block chain and get the latest block to confirm we are connected.
 w3 = Web3(Web3.HTTPProvider('http://165.232.108.36:32663/'))
 print(w3)

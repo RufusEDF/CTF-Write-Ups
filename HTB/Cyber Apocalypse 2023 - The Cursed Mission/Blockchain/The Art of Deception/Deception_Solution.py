@@ -123,9 +123,9 @@ interface_contract_instance = w3.eth.contract(address = target_address, abi = in
 
 #create contract
 def compile_source_file(file_path):
-with open(file_path, 'r') as f:
-source = f.read()
-return compile_source(source,output_values=['abi','bin'])
+    with open(file_path, 'r') as f:
+    source = f.read()
+    return compile_source(source,output_values=['abi','bin'])
 def deploy_contract(w3, contract_interface):
     tx_hash = w3.eth.contract( abi=contract_interface['abi'], bytecode=contract_interface['bin']).constructor().transact()
     address = w3.eth.get_transaction_receipt(tx_hash)['contractAddress']

@@ -8,96 +8,17 @@ wallet_address = "0xA631B47E8fC8D5e58cdc7EFc3Bb999135df75e47"
 private_key = "0x187ce616262c531702591319c8e3ae3c1668b93910d38a6853dbcef42c4fffd9"
 
 shooting_abi = [
-{
-"stateMutability": "payable",
-"type": "fallback"
-},
-{
-"inputs": [],
-"name": "firstShot",
-"outputs": [
-{
-"internalType": "bool",
-"name": "",
-"type": "bool"
-}
-],
-"stateMutability": "view",
-"type": "function"
-},
-{
-"inputs": [],
-"name": "secondShot",
-"outputs": [
-{
-"internalType": "bool",
-"name": "",
-"type": "bool"
-}
-],
-"stateMutability": "view",
-"type": "function"
-},
-
-{
-"inputs": [],
-"name": "third",
-"outputs": [],
-"stateMutability": "nonpayable",
-"type": "function"
-},
-{
-"inputs": [],
-"name": "thirdShot",
-"outputs": [
-{
-"internalType": "bool",
-"name": "",
-"type": "bool"
-}
-],
-"stateMutability": "view",
-"type": "function"
-},
-{
-"stateMutability": "payable",
-"type": "receive"
-}
+{"stateMutability": "payable","type": "fallback"},
+{"inputs": [],"name": "firstShot","outputs": [{"internalType": "bool","name": "","type": "bool"}],"stateMutability": "view","type": "function"},
+{"inputs": [],"name": "secondShot","outputs": [{"internalType": "bool","name": "","type": "bool"}],"stateMutability": "view","type": "function"},
+{"inputs": [],"name": "third","outputs": [],"stateMutability": "nonpayable","type": "function"},
+{"inputs": [],"name": "thirdShot","outputs": [{"internalType": "bool","name": "","type": "bool"}],"stateMutability": "view","type": "function"},{"stateMutability": "payable","type": "receive"}
 ]
 
 setup_abi = [
-{
-"inputs": [],
-"stateMutability": "nonpayable",
-"type": "constructor"
-},
-{
-"inputs": [],
-"name": "TARGET",
-"outputs": [
-{
-"internalType": "contract ShootingArea",
-"name": "",
-"type": "address"
-}
-],
-"stateMutability": "view",
-
-"type": "function"
-},
-{
-"inputs": [],
-"name": "isSolved",
-"outputs": [
-{
-"internalType": "bool",
-"name": "",
-"type": "bool"
-}
-],
-"stateMutability": "view",
-"type": "function"
-}
+{"inputs": [],"stateMutability": "nonpayable","type": "constructor"},
+{"inputs": [],"name": "TARGET","outputs": [{"internalType": "contract ShootingArea","name": "","type": "address"}],"stateMutability": "view","type": "function"},
+{"inputs": [],"name": "isSolved","outputs": [{"internalType": "bool","name": "","type": "bool"}],"stateMutability": "view","type": "function"}
 ]
 
 target_contract_address = w3.eth.contract(address = target_address, abi = shooting_abi)
